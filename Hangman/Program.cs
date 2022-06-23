@@ -44,8 +44,8 @@ while(t>0){
         }
         else{
             Console.WriteLine("The word does not contain this letter. Try again.");
-            t--;
         }
+        t--;
     }else if(choice == "2"){
         Console.WriteLine("What is the word?");
         string final = Console.ReadLine();
