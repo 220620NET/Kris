@@ -7,3 +7,14 @@ trainer.SetName("Ash Ketchum");
 Console.WriteLine(trainer.GetName());
 // trainer.NumBadges(3);
 // Console.WriteLine(trainer.NumBadges());
+PokeTrainer anotherTrainer = new PokeTrainer("Brock");
+Console.WriteLine(anotherTrainer.GetName());
+
+//Object Initializer
+int[] numArr = new int[10]{1,2,3,4,5,6,7,8,9,10};
+PokeTrainer thirdTrainer = new PokeTrainer{
+    NumBadges =3,
+    Money = 10
+};
+Console.WriteLine(thirdTrainer.Money);
+Console.WriteLine(thirdTrainer.GetName() + " has "+ thirdTrainer.Money+ " dollars.");

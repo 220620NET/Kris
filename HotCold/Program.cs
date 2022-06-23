@@ -24,21 +24,22 @@
 Random num = new Random();
 int answer = num.Next(100);
 Console.WriteLine(answer);
-int guess = 0;
 int tries = 12;
-string history = "_";
-string current ="_";
+int history= 0;
+int current =0;
 string movement ="_";
+string cu = "_";
 
 //Now starting the game with a system that counts down from the max number of tries
-while(tries>0 || current != "Correct"){
+while(tries>0 && cu != "Correct"){
     Round(tries);
-    guess = int.Parse(Console.ReadLine());
+    current = int.Parse(Console.ReadLine());
     // Need to check if number is near far or correct
-    Console.WriteLine(HotCold(guess));
-    current = HotCold(guess);
-    if (current == "Correct"){
+    Console.WriteLine(HotCold(current));
+    cu = HotCold(current);
+    if (cu == "Correct"){
         Console.WriteLine("You won");
+
     }else{
         movement = Change(history,current);
         Console.WriteLine(movement);
@@ -56,46 +57,33 @@ string HotCold(int guess){
     int dist = answer-guess;
     if(dist == 0){
         return "Correct";
-    }if(dist<5 || dist >-5){
+    }if((dist<5 && dist >-5)){
         return "Hot";
-    }else if(dist <10 || dist >-10){
+    }else if(dist<10 && dist >-10){
         return "Warm";
-    }else if(dist <15||dist>-15){
+    }else if(dist<15 && dist >-15 ){
         return "Luke warm";
-    }else if(dist<20||dist>-20){
+    }else if(dist<25 && dist >-25){
         return "Cold";
     }else{
         return "Freezing";
     }
 }
-string Change(string past, string present){
-    int val1 = Position(past);
-    int val2 = Position(present);
-    if(past == "" || past == present){
+string Change(int hist, int current){
+    if(hist ==0){
         return "No change";
-    }else if(val2<val1){
+    }else if(Abs(answer-current)<Abs(answer-hist)){
         return "Getting Hotter";
     }else{
         return "Getting Colder";
     }
 }
-
-int Position(string k){
-    if(k =="Hot"){
-        return 1;
-    }else if(k == "Warm"){
-        return 2;
-    }else if(k == "Luke warm"){
-        return 3;
-    }else if(k == "Cold"){
-        return 4;
-    }else if (k =="Freezing"){
-        return 5;
-    }else{
-        return 0;
+int Abs(int i){
+    if(i<0){
+        i *=-1;
     }
+    return i;
 }
-
 void Round(int time){
     Console.WriteLine("What do you think the number is? Hint: it is between 0 and 100 ");
 }
