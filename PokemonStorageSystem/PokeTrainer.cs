@@ -1,6 +1,6 @@
 // Namespace is analogous to packages in java, and it is a logical collection of types, such as classes, enums, and structs
 namespace Models;
-
+using customException;
 //Class is a blueprint to create objects
 //public is an example of access modifier
 //public means that everyone has access to whatever its decorating
@@ -36,7 +36,7 @@ public class PokeTrainer
         //we can validate input data
         if(String.IsNullOrWhiteSpace(nameToSet)){
             //we'll do something
-            Console.WriteLine("Hey, this is an invalid name.");
+            throw new InputInvalidExceptionException("the name is invalid");
         }else{
             // We set the value we got passed in to the private field name
         this.name = nameToSet;

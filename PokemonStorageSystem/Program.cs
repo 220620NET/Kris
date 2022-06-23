@@ -1,5 +1,5 @@
 ﻿using Models;
-
+using customException;
 PokeTrainer trainer = new PokeTrainer();
 
 //Doesn't work, access denied
@@ -18,3 +18,11 @@ PokeTrainer thirdTrainer = new PokeTrainer{
 };
 Console.WriteLine(thirdTrainer.Money);
 Console.WriteLine(thirdTrainer.GetName() + " has "+ thirdTrainer.Money+ " dollars.");
+try{
+    PokeTrainer test = new PokeTrainer();
+    test.SetName("    ");
+}catch(Exception ex){
+    Console.WriteLine("caught Exception"+ex.Message);
+}finally{
+    Console.WriteLine("This is the Finally block");
+}
