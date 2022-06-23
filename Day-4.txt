@@ -37,4 +37,14 @@ Capstone Project:
     - simulated experience of a client Project
     - 3 weeks
 
-
+Arrays:
+    - arrays start with an index of 0 
+    - when declared with a new arrayTyp[int] will save that many spaces in memory 32-bit space each
+    - Find method for arrays
+    - Array.Copy method can copy a section of the array
+    - Array.Clone method to create a shallow copy of the array
+    - int[,] <name> = new int[1,2] to create a multi-dimensional array
+    - Jagged Array: int[][] <name> = new int[1][]
+    - You can also pre-fill the array for a multi-dimensional array by doing {},{},{}
+        - the number of braces is determined by the first integer in the declaration of the array type;
+    
