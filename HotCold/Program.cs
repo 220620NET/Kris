@@ -51,26 +51,44 @@ while(tries>0 && cu != "Correct"){
 /* HotCold Method
     This method gathers if the user's guess is a particular distance from the number
     
-    If the user's guess is 5 away or closer to the number 
+    If the user's guess is 5 away or closer to the number we say that the user is Hot
+    If the user's guess is 10 away or closer to the number we say that the user is Warm
+    If the user's guess is 15 away or closer to the number we say that the user is Luke warm
+    If the user's guess is 25 away or closer to the number we say that the user is Cold
+    If the user's guess is more than 25 away from the number we say that the user is Freezing
+
+    Only one output of this method is allowed so switch statements would not be acceptable if elseif is better here
 */
 string HotCold(int guess){
     int dist = answer-guess;
     if(dist == 0){
         return "Correct";
-    }if((dist<5 && dist >-5)){
+    }if(Abs(dist)<5 && ){
         return "Hot";
-    }else if(dist<10 && dist >-10){
+    }else if(Abs(dist)<10){
         return "Warm";
-    }else if(dist<15 && dist >-15 ){
+    }else if(Abs(dist)<15){
         return "Luke warm";
-    }else if(dist<25 && dist >-25){
+    }else if(Abs(dist)<25){
         return "Cold";
     }else{
         return "Freezing";
     }
 }
+
+/*  Change Method
+
+    This method prints out if the user has moved closer
+
+    Since some numbers could be negative for distances we send it to a function to find the absolute value of the value
+    If the game just started or if the value that the user inputted was the same as what the inputted previously the game says there has been No Change
+    If the distance that was just guessed is closer to the answer than what was previously guessed the game says the user is Getting Hotter
+    If the distance that was just guessed is farther away from the answer than what was previously guessed the game says the user is Getting Colder
+
+    Again only one output is desired so this will be accomplished by using if elseif statements
+*/
 string Change(int hist, int current){
-    if(hist ==0){
+    if(hist ==0 || hist==current){
         return "No change";
     }else if(Abs(answer-current)<Abs(answer-hist)){
         return "Getting Hotter";
@@ -78,12 +96,25 @@ string Change(int hist, int current){
         return "Getting Colder";
     }
 }
+
+/*  Abs Method
+
+    This method returns the absolute value of a single integer
+    if the integer is negative then the method multiplies the value by -1
+    This is the bare bone definition of absolute values
+*/
 int Abs(int i){
     if(i<0){
         i *=-1;
     }
     return i;
 }
+
+/*  Round Method
+
+    This method simply prints a nice question to the player.
+*/
 void Round(int time){
     Console.WriteLine("What do you think the number is? Hint: it is between 0 and 100 ");
+    Console.WriteLine("You have "+ tries+ " tries left.");
 }
