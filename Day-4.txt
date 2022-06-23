@@ -47,4 +47,26 @@ Arrays:
     - Jagged Array: int[][] <name> = new int[1][]
     - You can also pre-fill the array for a multi-dimensional array by doing {},{},{}
         - the number of braces is determined by the first integer in the declaration of the array type;
-    
+
+Pokemon Storage App:
+    - I want to create an application that pokemon trainers can store, view, and retrieve their stored pokemon
+    - User Stories:
+        - People should be able to register themselves as pokemon trainer in the system
+        - They should be able to store their pokemon (perhaps the box system)
+        - They should be able to view their stored pokemon
+        -They should be able to retrieve the stored pokemon
+    -Feature/ Spec:
+        - LogIn/ register
+        - View Trainer specific pokemon
+        - retrieve
+        - Store
+    -Pokemon Trainers:
+        - name
+        - # of Badges
+    - Pokemon:
+        - name
+        - skills
+        - level
+        - types
+        - caught location
+        - evolved
