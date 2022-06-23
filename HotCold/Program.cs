@@ -25,11 +25,25 @@ Random num = new Random();
 int answer = num.Next(100);
 Console.WriteLine("What do you think the number is? Hint: it is between 0 and 100 ");
 int guess = int.Parse(Console.ReadLine());
+int tries = 12;
+//Now starting the game with a system that counts down from the max number of tries
 while(tries>0){
-    if (guess == answer){
-        Console.WriteLine("Correct");
-    }else{
-        Console.WriteLine("Wrong");
-    }
+    // Need to check if number is near far or correct
+    Console.WriteLine(HotCold(guess));
     tries --;
+}
+
+string HotCold(int guess){
+    int dist = answer-guess;
+    if(dist<5 || dist >-5){
+        return "Hot";
+    }else if(dist <10 || dist >-10){
+        return "Warm";
+    }else if(dist <15||dist>-15){
+        return "Luke warm";
+    }else if(dist<20||dist>-20){
+        return "Cold";
+    }else{
+        return "Freezing";
+    }
 }
