@@ -1,0 +1,21 @@
+QC Orientation start 10:04am EST
+Arrived @ 10am
+
+Video of bootcamp Orientation
+    - Instructors designate breaks
+    - Practice code that was learned in the past week and speaking with precision
+    - Think through problems before coding
+    = Learn good strategies for debugging
+    - Give very detailed answers and BE TECHNICAL
+    - QC's occurs typically on Mondays or Tuesdays
+
+Found a good textbook. https://vulms.vu.edu.pk/Courses/CS508/Downloads/Concepts%20of%20Programming%20Languages%2011th%20Ed.pdf
+
+Notes for Training today:
+    - use cat command to see what is in a file in the terminal
+    - "git add ." to add new new directories
+    - "git status" to see what is in the git main branch
+    - need to have allowed permissions for github with team members
+    - "https://krisholl@github.com/..."
+
+
