@@ -70,3 +70,16 @@ Pokemon Storage App:
         - types
         - caught location
         - evolved
+
+Exceptions:
+    -They stand for "Exceptional Events"
+    - These are events that interrupt normal flow of the program. They are different from error because exceptions can be managed/handled where as errors are usually fatal
+    - Some examples of exceptions is "Null Reference Exception which happens when I try to read a property or invoke a method of null,
+    - We handle these exceptions with Try/Catch block
+    -First, we wrap our "risky" code(aka the code that might throw an exception) in a try block
+    - and then, we follow that up with catch block, to catch any exceptions they throw and act accordingly
+    -Finally, there is a finally block to handle anything that nees to be managed before existing try/catch.
+    -IE cleaning up resources that is not managed by your runtime such as closing connections. and this finally block is executed regardless of whether it caught an exception of not
+    -There are many different types of exceptions for different scenarios.
+    - You want to use the appropriate type of exception to properly communicate to the rest of the program why it failed. However, all these exceptions actually inherit from exception class
+    - and if you find that there is no built in exception for the thing you're trying to do, you can create your own custom exception
