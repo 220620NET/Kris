@@ -5,6 +5,7 @@ Foundations Projec:
         - You will be required to track your progress as you complete requirements for each weekly
         - this is an individual project
         -Everyone has the same requirements so questions to each other are allowed but no copying code
+        - 4 weeks
     -Tracking progress 
         -Trello Board with name at the top
         -each requirement has a checklist that can be checked off as you complete them
@@ -15,6 +16,7 @@ Technology Project:
         - Will be working with a team
         - Will allow you to further expand you technical knowledge
         - Goal is to build teamwork skills and get practical experience working in a team project
+        - 3 Weeks
     - Themes:
         - E-Commerce
             - Game Stores
@@ -34,3 +36,5 @@ Capstone Project:
     - working with your entire team
     - simulated experience of a client Project
     - 3 weeks
+
+
