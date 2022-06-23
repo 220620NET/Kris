@@ -28,3 +28,9 @@ Technology Project:
             - Real Estate
             - Healthcar
             - Car Insurance
+
+Capstone Project:
+    - Final Project
+    - working with your entire team
+    - simulated experience of a client Project
+    - 3 weeks
