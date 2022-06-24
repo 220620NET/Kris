@@ -24,23 +24,21 @@ int[] leader = new int[5];
 Beginning:
 //Getting information from background commputer and user
 
-
-
 bool play = true;
 
 //Now starting the game with a system that counts down from the max number of tries
 while (play){
+    Console.Clear();
     Random num = new Random();
     int answer = num.Next(100);
-    Console.WriteLine(answer);
     int tries = 12;
     int history= 0;
     int current =0;
     string movement ="_";
     string cu = "_";
     string p = "";
-    if (leader[0] !=null){
-        Console.WriteLine("The fastest game lasted "+ leader[0]+"turns. Can you beat that?");
+    if (leader[0] != 0){
+        Console.WriteLine("The fastest game lasted "+ leader[0]+" turns. Can you beat that?");
     }
     
     while(tries>0 && cu != "Correct"){
@@ -83,16 +81,16 @@ while (play){
     Only one output of this method is allowed so switch statements would not be acceptable if elseif is better here
 */
 string HotCold(int guess, int answer){
-    int dist = answer-guess;
+    int dist = Math.Abs(answer-guess);
     if(dist == 0){
         return "Correct";
-    }if(Abs(dist)<5){
+    }if(dist<5){
         return "Hot";
-    }else if(Abs(dist)<10){
+    }else if(dist<10){
         return "Warm";
-    }else if(Abs(dist)<15){
+    }else if(dist<15){
         return "Luke warm";
-    }else if(Abs(dist)<25){
+    }else if(dist<25){
         return "Cold";
     }else{
         return "Freezing";
@@ -113,24 +111,11 @@ string HotCold(int guess, int answer){
 string Change(int hist, int current,int answer){
     if(hist ==0 || hist==current){
         return "No change";
-    }else if(Abs(answer-current)<Abs(answer-hist)){
+    }else if(Math.Abs(answer-current)<Math.Abs(answer-hist)){
         return "Getting Hotter";
     }else{
         return "Getting Colder";
     }
-}
-
-/*  Abs Method
-
-    This method returns the absolute value of a single integer
-    if the integer is negative then the method multiplies the value by -1
-    This is the bare bone definition of absolute values
-*/
-int Abs(int i){
-    if(i<0){
-        i *=-1;
-    }
-    return i;
 }
 
 /*  Round Method
