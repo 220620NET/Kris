@@ -19,34 +19,57 @@
             ii. if the two numbers that the user has put in recently share a modulo with the answer
 
 */
+int[] leader = new int[5];
 
+Beginning:
 //Getting information from background commputer and user
-Random num = new Random();
-int answer = num.Next(100);
-Console.WriteLine(answer);
-int tries = 12;
-int history= 0;
-int current =0;
-string movement ="_";
-string cu = "_";
+
+
+
+bool play = true;
 
 //Now starting the game with a system that counts down from the max number of tries
-while(tries>0 && cu != "Correct"){
+while (play){
+    Random num = new Random();
+    int answer = num.Next(100);
+    Console.WriteLine(answer);
+    int tries = 12;
+    int history= 0;
+    int current =0;
+    string movement ="_";
+    string cu = "_";
+    string p = "";
+    if (leader[0] !=null){
+        Console.WriteLine("The fastest game lasted "+ leader[0]+"turns. Can you beat that?");
+    }
+    
+    while(tries>0 && cu != "Correct"){
     Round(tries);
     current = int.Parse(Console.ReadLine());
     // Need to check if number is near far or correct
-    Console.WriteLine(HotCold(current));
-    cu = HotCold(current);
+    Console.WriteLine(HotCold(current,answer));
+    cu = HotCold(current, answer);
     if (cu == "Correct"){
         Console.WriteLine("You won");
 
     }else{
-        movement = Change(history,current);
+        movement = Change(history,current,answer);
         Console.WriteLine(movement);
     }    
     history = current;
     tries --;
+    } 
+    Console.WriteLine("Would you like to continue playing?");
+    p = Console.ReadLine();
+    if(p =="y"){
+        play = true;
+        leader = LeaderBoard(tries);
+        goto Beginning;
+    }else{
+        play = false;
+    }
 }
+
 
 /* HotCold Method
     This method gathers if the user's guess is a particular distance from the number
@@ -59,11 +82,11 @@ while(tries>0 && cu != "Correct"){
 
     Only one output of this method is allowed so switch statements would not be acceptable if elseif is better here
 */
-string HotCold(int guess){
+string HotCold(int guess, int answer){
     int dist = answer-guess;
     if(dist == 0){
         return "Correct";
-    }if(Abs(dist)<5 && ){
+    }if(Abs(dist)<5){
         return "Hot";
     }else if(Abs(dist)<10){
         return "Warm";
@@ -87,7 +110,7 @@ string HotCold(int guess){
 
     Again only one output is desired so this will be accomplished by using if elseif statements
 */
-string Change(int hist, int current){
+string Change(int hist, int current,int answer){
     if(hist ==0 || hist==current){
         return "No change";
     }else if(Abs(answer-current)<Abs(answer-hist)){
@@ -116,5 +139,21 @@ int Abs(int i){
 */
 void Round(int time){
     Console.WriteLine("What do you think the number is? Hint: it is between 0 and 100 ");
-    Console.WriteLine("You have "+ tries+ " tries left.");
+    Console.WriteLine("You have "+ time+ " tries left.");
+}
+
+/* Leaderboard Method
+
+    This method saves a leader board of the fastest rounds
+*/
+int[] LeaderBoard(int tries){
+    int [] k = new int[5]{ 0, 0,0,0,0};
+    for(int i=0; i<5;i++){
+        if(k[i]==0){
+            k[i] = tries;
+        }else if(k[i]>tries){
+            k[i] =tries;
+        }
+    }
+    return k;
 }
