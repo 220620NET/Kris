@@ -1,12 +1,11 @@
-namespace customException;
+namespace CustomExceptions;
 
-[System.Serializable]
-public class InputInvalidExceptionException : System.Exception
+public class InputInvalidException : Exception
 {
-    public InputInvalidExceptionException() { }
-    public InputInvalidExceptionException(string message) : base(message) { }
-    public InputInvalidExceptionException(string message, System.Exception inner) : base(message, inner) { }
-    protected InputInvalidExceptionException(
+    public InputInvalidException() { }
+    public InputInvalidException(string message) : base(message) { }
+    public InputInvalidException(string message, System.Exception inner) : base(message, inner) { }
+    protected InputInvalidException(
         System.Runtime.Serialization.SerializationInfo info,
         System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
 }

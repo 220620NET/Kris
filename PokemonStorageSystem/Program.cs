@@ -1,5 +1,5 @@
 ﻿using Models;
-using customException;
+using CustomExceptions;
 PokeTrainer trainer = new PokeTrainer();
 
 //Doesn't work, access denied
@@ -26,3 +26,5 @@ try{
 }finally{
     Console.WriteLine("This is the Finally block");
 }
+Pokemon starter = new Pokemon("Pikachu","Thor");
+Console.WriteLine(starter.Name+" is nicknamed "+ starter.NickName);
