@@ -2,4 +2,52 @@ Employee Experience:
     -   Main theme is congradulations for staying in
     - Keep an authentic positive attitude
     - Having a mindset of learning is always asking questions not listening 
-    
+
+First QC is 2-4pm Monday?
+
+How to study for QC:
+    0. http://www.coursera.org/learn/learning-how-to-learn
+    1. Refer to the curriculum. Expect to know most if not all topics listed on the agenda for the week(aka the week you're getting QC'd on)
+    2. Make sure you can explain these topics in your own words. "Illusion of Competency"
+        - Creating analogies
+        - Building off of the topics/concepts you already know
+        - Explaining to others
+        - teach others 
+        - Flashcards
+        - The most impoortant thing here is, you're actively recalling the information instead of passively consuming
+        - more senses/emotions you can recruit when you learn something the better retention it will be.
+    3. How to answer technical question that asks you "what is _?"
+        - What is it
+        - Why do we use it
+        - How you have used it
+    4. "A vs. B?"
+        - How are they similar?
+        - How are they different?
+    5. When you don't know something, can't produce an answer right away
+        - First, see if you know remotely anything related to that topics
+        - If so, say it
+        - Even if it may come from different industry/skill, if it seems related, it's better to say that instead of IDK
+        - Don't say "I don't know"
+            - instead say "That's a really good question, I'll look more into it/research about it after this"
+    6. Watch out on how you use technical terms
+        - There are a lot of technical terms you can throw around, but, simpler is better
+        - If you can explain things in simple terms that's better than throwing around a bunch of jargons that you may or may not use corrently.
+        - If you don't have a full grasp on a technical term - don't use it! leave t out, substitute with plain language.
+
+Corollary: The Soft Skills:
+    - We put heavy emphasis on the delivery of the answers as much as the content itself
+        - Dress
+        -Camera
+        - Speaking Tone/Speed/Volume - make sure you're not speaking too softly, not mumbling, not speaking too fast
+        - Energy Level - This is interview/performance situation - so if you have lower energy, just be a little more extroverted for the next 10 minutes
+        - Eye Contact: Don't look around (as it can be interpreted as cheating)
+        - Fidgeting: be aware of your nervous habits
+
+How to make the interviewer ask questions you know how to answer:
+    - If you are not ready to talk about a certain concept/ topic - DO NOT BRING THEM UP
+        - IE. "What are some class members?"
+            -and you don't knwo what fields are, just .. don't even mention fields are class members
+            - Lead them to the area that you know more about
+    - Second, Don't start the answer by " I'm not sure about this ... but... AND THEn give a good answer"
+    - Third, Believe it or not, taking 5 seconds before starting to answer doesn't feel like an eternty to the interviewer.
+      If you need the time to put together a coherent answer, that the time. It's better to take the time in the beginning and come up with polished question
