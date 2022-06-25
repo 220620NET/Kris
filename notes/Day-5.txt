@@ -51,3 +51,34 @@ How to make the interviewer ask questions you know how to answer:
     - Second, Don't start the answer by " I'm not sure about this ... but... AND THEn give a good answer"
     - Third, Believe it or not, taking 5 seconds before starting to answer doesn't feel like an eternty to the interviewer.
       If you need the time to put together a coherent answer, that the time. It's better to take the time in the beginning and come up with polished question
+
+
+
+Class Library Project:
+    - move classes that don't interact with the user into a project that holds each class
+    - 
+
+To create Multi Project Application
+1. Create an Empty folder(and preferably name it the name of your application)
+2. Create a Console C# Project(`dotnet new console -n project-name`) named Models, DataAccess, Services(these are suggestions, but they each play a different role in this application)
+    -   Classlibrary projects don't generate .exe (executable) files. They are not meant to be run directly, but to be used by other projects.
+3. Connect projects to each other by creating project references
+    1. If project A needs classes from project B, navigate to project A.
+    2. `dotnet add reference relative-path-to-the-project-B-folder` to add reference of project B to project A (ex. `dotnet add reference ../Models`)
+4. Finally, Create a solution to package all these projects together
+    - First navigate to the folder that is holding all these projects
+    - run `dotnet new sln -n [project]
+        - dotnet sln add [folders]
+
+Interface:
+    - What if, for classes, we had to provide an instruction sheet?
+        - These are functionalities available to this class
+    - We use interface to engorce a certain set of behavior on a class that implements it
+    - Interface is a type that acts as a contract to a set of public behavior
+    - which means, any class tha _implements_ that particular interface must implement alll of interface's methods
+
+    -For example, any classes that implements ICloneable interface must implement all of ICloneable's method, which ther is one, Clone()
+    -which means, if I'm using a class that implements ICloneable, as a User I know I can call Clone method on this class
+
+    -Inter face is similar to abstract class in that both of them can have methods that don't have bodies. Interface methods are inherently public and abstract.
+        -However they are different because abstract classes can have a constructor while an interface cannot. This only works for methods that are commonly shared.
