@@ -61,7 +61,7 @@ while(play){
             }        
         }else{
             annoyance++;
-            Failure(annoyance,t);
+            t =Failure(annoyance,t);
         }    
         if (t == 0){
             Console.WriteLine("You ran out of tries.");
@@ -133,27 +133,25 @@ string Round(char[] display, int tries){
     This is the method that interact witht he player if they fail to follow direction
     This gives the code some personality sorry for it being mean
 */
-void Failure(int x, int t){
-    if(x>4){
-        Console.WriteLine("I warned you now you have "+ t--+" tries.");
-    }else{
-        switch(x){
-            case 1:
-                // code block
-                Console.WriteLine("I implore you to either type 1 or 2 and not be adventurous");
-                break;
-            case 2:
-                // code block
-                Console.WriteLine("Ok... haha... funny... now please enter a 1 or 2.");
-                break;
-            case 3:
-                Console.WriteLine("Last warning before you start losing tries. Type 1 or 2!");
-                break;
-            case 4:
-                Console.WriteLine("Last warning before you start losing tries. Type 1 or 2!");
-                break;
-            default:
-                break;
-        }        
-    }
+int Failure(int x, int t){
+    switch(x){
+        case 1:
+            // code block
+            Console.WriteLine("I implore you to either type 1 or 2 and not be adventurous");
+            break;
+        case 2:
+            // code block
+            Console.WriteLine("Ok... haha... funny... now please enter a 1 or 2.");
+            break;
+        case 3:
+            Console.WriteLine("Second to last warning before you start losing tries. Type 1 or 2!");
+            break;
+        case 4:
+            Console.WriteLine("Last warning before you start losing tries. Type 1 or 2!");
+            break;
+        default:
+            Console.WriteLine("I warned you now you have "+ t-- +" tries.");
+            break;
+    }        
+    return t;
 }

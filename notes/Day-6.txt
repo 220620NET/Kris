@@ -1,0 +1,34 @@
+Software Development Life Cycle:
+    -   SDLC referes to different stages software goes through during its development
+        - Define the problem ("planning")
+        - Coming up with the map of what the application looks like ("design")
+        - Psuedocode
+        - Write the code ("Implementation")
+        - Test
+        - Refactor (go back and forth between testing/refactor)
+        - Publish
+
+Waterfall
+    -This particular model comes from factory/production line where they produce physical goods and going back/starting over costed a lot of money.
+    - The stages (Planning, Design, Implementation, Testing/Verification,Pushing) are done once, and is expected to be as good as they can be.
+    - So these are handy for things that have to be super exact (military mission, apollo launches)
+    - But it also came with some drawbacks such as 
+        -can't go back and fix so stakes for each stages are high
+        - Lack of iteration means that there will be very little change to learn from the testing and reflect the result on the current production
+        - Lack of innovation
+        - It's inefficient since we aren't always sure what we want exactly
+
+Differences between physical goods and software
+    - unlike physical goods, it's so much easier to revise/improve software because
+        1. you can always start fresh
+        2. there is no raw material needed to produce softwares
+Agile
+    is a set of values to consider when developing software 
+        - Individuals and interactions over processes and tools
+        - working software over comprehensive documentations
+        - customer collaboration over contract negotiation
+        - responding to change over following a planning
+
+Scrum
+    - Is one of the implementation of Agile, and it is characterized by interactions
+        
