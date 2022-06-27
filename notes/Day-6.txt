@@ -31,4 +31,42 @@ Agile
 
 Scrum
     - Is one of the implementation of Agile, and it is characterized by interactions
+    - Unlike waterfall where each stage is gone through once, teams utilizing Scrum iterate through those same stages in a rapid manner (2-3 weeks).
+    -That unit of iteration is called a sprint
+    - In a sprint, we plan the work that seems achievable in upcoming sprint (2-3 weeks worth of work), we design, implement, test, and deploy to production at the end of the sprint
+
+Part of a sprint:
+    - Sprint planning meeting: you meet together as a team and decide on the scope of the sprint
+        - how much work seems doable in next 2-3 weeks?
+        - Which feature/bug takes the most priority?
+        - Any carryover from the last sprint we need to take account to?
+    -Daily standup meeting: During sprint
+        - This is an opportunity to catch up to what everyone else is doing in your team
+        - This as a short meeting - suposed to be done in ~10 min max
+            -while standing up the first thing in the morning
+                -3 Questions that gets asked here:
+                    -What did you do yesterday
+                    -what do you plan on doing today
+                    - Any blockers
+    - Burndown charts
+        - Using the points assigned to each "user stories"/items we can track how our sprint is going
+        - Comparing the actual remaining points to the projected progress, the team can make adjustments to the sprint
         
+-Kanban Board
+    - Kandan board is to track each items movement through different stages
+        - Stages each items go through
+            - Product Backlog - wish list
+            - Sprint Backlog - todo list
+            - doing - actively being worked on 
+            - Testing- the implementation has been complete
+            - Staging -the verfication is done
+            - Done - done
+        -Trello, Github, Jira
+
+- Sprint Retrospectiv
+    - The sprint is now done. The team now meets to discuss how the sprint went
+        - How did it go?
+        - Any outstanding items?
+        - Pacing
+        -Challenges
+        -What worked well
