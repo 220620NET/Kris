@@ -19,7 +19,7 @@ List changes size automattically
 
 # Unit Testing in C#
 
-## Why Wreite Tests?
+## Why Write Tests?
 So far we've been manually testing our code, as in after we write some code, we run our code to make sure the behavior of the program matches our expected behavior. If it doesn't, then there is a bug. If there is a bug, we "debug" by tracking down which part of the program is not functioning as intended. Once we narrow down the problem and fix it, we run the program again, and make sure the fix we deployed actually fixed the problem/bug
 This has served us well, and you can get pretty far in this manual testing.
 
