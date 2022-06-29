@@ -52,7 +52,7 @@ Part of a sprint:
         - Using the points assigned to each "user stories"/items we can track how our sprint is going
         - Comparing the actual remaining points to the projected progress, the team can make adjustments to the sprint
         
--Kanban Board
+Kanban Board
     - Kandan board is to track each items movement through different stages
         - Stages each items go through
             - Product Backlog - wish list
