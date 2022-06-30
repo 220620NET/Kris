@@ -20,7 +20,7 @@ public class PKMNTrainer
         Money=0;
     }
 
-    private string name;
+    public string name;
     public string GetName(){
         return name;
     }
