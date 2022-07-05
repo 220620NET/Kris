@@ -10,7 +10,7 @@ When we run out of the space we have to create a longer array and we have to cop
 - Fixed Length
 - everything is right next to each other
 
-## List 
+## List
 - Lists are auto-resizing arrays
 List addresses array's fixed length inconvenience(?) by auto resizing when it runs out of space.
 Additional features List introduces on top of arrays
@@ -30,8 +30,8 @@ Generic class is a class that can work with many different type of data.
 For example, we can have `List<String>` `List<int>` `List<List<List<int>>>`
 Generic Classes preserve the same set of behavior for multiple data types. This is a little different from overloading. This is anouther example of polymorphism, one of the principles of OOP.
 
-## Algorithm analysis:Time Complexity and Big O Notation
-Algorithm is a finite set of instruction. 
+## Algorithm analysis: Time Complexity and Big O Notation
+Algorithm is a finite set of instruction.
 2 types of complexity: time complexity, space complexity
     -Time complexity: the amount of time an algorithm takes to complete in  # instructions/n elements. For array of N eleements, looking at each array element would take N instructions. The most common notation to describe the time complexity of an algorithm is Big O: O(). Big O notation is interested in worst case analysis. (In our nave searching of the array where we traverse the array from the front to back in search of an item, the worst case scenario was when the item was at the very end. We had to traverse all the way to the end to find the item: O(n)-linear)
     - Space complexity: how much memory space does your algorithm take up when executing
@@ -65,7 +65,7 @@ Is a collection of key value pair
         -"aaaaabbccwff"
     - Store two related data types together(such as username and password)
         -instead of string username ="pw";
-    
+
 ## foreach loop and IEnumerable
 Not all data structures are designed to access items by its index. But still there are ways to loop through those collections even when we can't access its items by index. Any classes that implements IEnumerable has ability to give you the enumerator(which basically gives you the next item in the list). We use the enumerator under the hood through foreach loop.
 ## Hashset
