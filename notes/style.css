@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(34, 62, 86);
+}
+
+#heading-example{ 
+    font-style: italic;
+    font-size: 12px;
+}
+h1{
+    font-style: normal;
+}
+#heading-example>h1{
+    background-color: crimson;
+    display: none;
+}
+a:visited{
+    color:darkcyan;
+}
+li:hover{
+    cursor: pointer;
+}

@@ -6,7 +6,7 @@
         - Data Source
         - Query
         - Execution
-## LING - Query Expression Basics
+## LINQ - Query Expression Basics
     - A query expression must begin with a from clause and must end witha  select or group clause. Getween the first from clause and the last select or group, it can contaion one or more: where, order by.
     - The application always sees the source data as IEnumerable<T> or IQueriable<T>
  ```csharp
