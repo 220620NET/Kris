@@ -23,4 +23,4 @@ jobs:
     - name: Build
       run: dotnet build ./Hangman --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test ./Hangman --no-build --verbosity normal
