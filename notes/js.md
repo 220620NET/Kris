@@ -33,4 +33,22 @@ Introduced in ES6
 ## DOM (Document Object Model)
 Is how CSS and JS interacts with HTML elements. It is a tree like structure
 
+## Events
+JS primarily interacts with HTML/DOM through events. Browsers keep track of many different types of events and users can attach their event handlers(js function made to respond to a certain event) to these events
+
+### Event Propagation
+Once the event reaches the target element, it "bubbles" up to the window. As it bubbles up, it can trigger all of its parents related to the
 ## Making HTTP Calls
+- XML
+- FetchAPI
+
+## JS Object vs JSON
+JSON is a notation to transport data derived from JS objects.
+
+## Storage
+- cookie
+- Web Storage API
+    - Local Storage
+        - Persists through sessions
+    - Session Storage
+        - Gets wiped when the user closes the tab
