@@ -1,12 +1,90 @@
-.name-input>button{
-    margin-top: 5px;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root,
+:root.light {
+  --background-color: #fff;
+  --color: rgb(0, 0, 0);
 }
 
-.form-container{
-    margin: 5px;
+:root.dark {
+  --background-color: #381e1e;
+  --color: #2db61b; 
 }
 
-.result-container{
-    margin-top: 2em;
-    margin-right: 5em;
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--color);
+  font-family: 'Inter', sans-serif
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  text-align: center;
+  font-weight: normal;
+}
+
+.toggle-container {
+  position: relative;
+}
+
+.theme-btn {
+  width: 6em;
+  height: 6em;
+  padding: 0.5em;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: magenta;
+  color: var(--color);
+  border:rgb(0, 0, 0)
+}
+
+.theme-btn img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.light .theme-btn.dark{
+  display: block;
+}
+.theme-btn.light {
+  display: none;
+}
+
+.dark .theme-btn.dark {
+  display: none;
+}
+
+.dark .theme-btn.light {
+  display: block;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5rem 0;
+  background-color: #eaeaea90;
+}
+
+footer p {
+  font-size: 0.75rem;
+  margin: 0.25rem 0;
+  color: #221133;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
 }

@@ -4,7 +4,7 @@ let countryCode = {"*":"All","FR":"France","IT":"Italy","ES":"Spain","TR":"Turke
 
     return countryCode[code];
 }
-
+const setTheme = theme => document.documentElement.className = theme;
 function analyzeName(e){
     // e.stopPropagation();
     //console.log(e);
