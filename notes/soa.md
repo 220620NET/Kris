@@ -11,4 +11,4 @@ These are some of the guiding principles to help design your web services
     -your services should not be codependent/tightly coupled/ in other services business
 - Abstraction
     - You service should not show its gut- aka, provide a simple interface for users to use
-- !(SOA Principles)[https://www.guru99.com/soa-principles.html]
+- [SOA Principles](https://www.guru99.com/soa-principles.html)
