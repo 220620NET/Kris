@@ -1,0 +1,13 @@
+.trainer{
+    right:0;
+    background-color: blue;
+}
+.split{
+    height: 80%;
+    width: 50%;
+    position: fixed;
+    z-index: 10;
+    top: 100;
+    overflow-x: hidden;
+    padding-top: 0;
+}

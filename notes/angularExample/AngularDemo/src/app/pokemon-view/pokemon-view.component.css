@@ -1,0 +1,6 @@
+.exampleText {
+    left:0;
+    writing-mode: sideways-rl;
+    background-color: yellow;
+    block-size: 200px;
+}

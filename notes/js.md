@@ -52,3 +52,12 @@ JSON is a notation to transport data derived from JS objects.
         - Persists through sessions
     - Session Storage
         - Gets wiped when the user closes the tab
+
+## Modules
+- `type="module"` in script tag
+- specify what you want to import
+- specify what you want to export
+## Inheritance
+### Prototypal
+### Classes and OOP in JS
+### This
